@@ -1,130 +1,60 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-<title> MY CV </title>
-<meta charset="UTF-8">
-  <meta name="description" content="RESUME">
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  <meta name="author" content="MANSI GAUTAM">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
-.wrapper{
-       display:grid;
-       grid-template-columns:4fr 6fr;
-
-       grid-gap:1em;
-       
-      
-}
-.wrapper > div{
-background:black
-padding : 2em;
-}
-.wrapper > div:nth-child(odd){
-background:#fff;
-}
-.wrapper > div:nth-child(even){
-background:#fff;
-}
-.wrapper1{
-
-display:grid;
-background:#2fb3b6;
-
-grid-template-rows:10px 30px;
-}
-.rcorners1 {
-  border-radius: 25px;
-  background: #aff3fd;
-  padding: 20px; 
-  width: 100px;
-  height: 5px;  
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.container {
+  position: relative;
   width: 50%;
 }
 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
 </style>
 </head>
-<body bgcolor="powderblue">
-<div class="wrapper">
-<div style="background-color:#b0e0e6;"> <img src="mansi1.jpg" width="160px" height="260px" border="2"  ></div>
-<div> 
-<h3 style="font-family:Times New Roman;font-size:30px;"><b>   MANSI GAUTAM </b></H3>
-I am a Computer Science undergrad at MANIT BHOPAL,
-who is enthusiastic about coding.
-I like to observe and explore new things.I take challenges optimististically.
-I love listening songs and reading books.
-In my leisure time I like to cook and do creative writing.
+<body>
 
-</div>
-</div>
-<div class="wrapper1">
-<pre><i class="fab fa-github"> mansigautam777      </i><i class="fab fa-linkedin"> MANSI GAUTAM</i>
-</pre>
-</div>
-<div class="wrapper">
-<div style="background-color:#3c8b90"> 
- <h3 style="font-family:Times New Roman;"> TECHNICAL SKILLS :</h3>
- <p class="rcorners1"> JAVA </p>
- <p class="rcorners1"> C </p>
- <p class="rcorners1"> MySQL </p>
- <p class="rcorners1"> HTML </p>
- <p class="rcorners1"> CSS </p>
- 
-</div>
-<div> 
-<h3 style="font-family:Times New Roman;"> EDUCATION: </h3> <hr>
- <b>AISSCE(10th)</b><br>
-<i>St.Mary's Sr. Sec. Convent School,Bhopal (2017)</i><br>
- <li>10 CGPA<br><br><br>
- <b>AISSCE(12th)</b><br>
-<i>St.Mary's Sr. Sec. Convent School,Bhopal (2019)</i><br>
- <li>94.4%<br><br><br>
- <b>B.Tech Computer Science and Engineering</b><br>
- <i>Maulana Azad National Institute of Technology</i><br>
- <li>8.54 CGPA
-</div>
-<div style="background-color:#3c8b90;"> 
-<h3>PROJECT:</h3>   
-<b>Pizza Shop Management Project(2018-19)</b><br>
-<li>An Object Oriented Programming based project in JAVA.
-<li>It involved GUI building with MySQL at the back end.
-<li>The user inputs the details asked which is stored in a data base in    MySQL,which can be retrieved for various purposes.
-<li>The project involved basics of JAVA and MySQL including linking of GUI frames. 
-</div>
-<div> <h3>CERTIFICATES:</h3><hr>
-<b>Certificates of Merit</b><br>
-<li>Public Speaking
-<li>General Knowledge Quizzes
-<li>Science Olympiads<br><br>
-<b>Certificate of Participation</b><br>
-<li>C Programming Workshop by VISION ,Bhopal
-<li>Ethical Hacking Workshop by IEEE ,Bhopal
-<li>Artificial Intelligence Workshop by IIEC_DOT
-<li>Adobe India Session BY AISSEC ,Bhopal
-</div>
-<div style="background-color:#3c8b90;"> 
-<h3> WORK EXPERIENCE:</h3>
-<b>TECHNICAL  EXECUTIVE</b><br>
-<i>VISION MANIT,Bhopal</i><br>
-2020-Present<br>
-</div>
-<div>
-<h3> ACHIEVMENTS:</h3><hr>
-<li>Gold Medal in IMO(2018-19)
-<LI>High Distinction in ANCQ(2018)
-<LI>General Proficiency Awards
-</div>
-</div>
+<h2>Slide in Overlay from the Right</h2>
+<p>Hover over the image to see the effect.</p>
 
+<div class="container">
+  <img src="mansi1.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
 
 </body>
 </html>
