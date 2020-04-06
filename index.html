@@ -14,19 +14,18 @@ body {
 }
 
 .header {
-  background-color: #996666;
+  
   opacity:0.7;
   padding: 20px;
   text-align: center;
 }
 
-/* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #006ee6;
 }
 
-/* Style the topnav links */
+
 .topnav a {
   float: left;
   display: block;
@@ -36,90 +35,150 @@ body {
   text-decoration: none;
 }
 
-/* Change color on hover */
+
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #80faff;
   color: black;
 }
 
-/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
   padding: 15px;
+  background-color:#85feff
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:6000px) {
   .column {
     width: 100%;
   }
 
-pre {
-  max-width: 50%;
-  height: auto;
-  background: #ddd;
-  position: relative;
-  animation-name: example;
-  animation-duration: 5s;  
-  animation-fill-mode: forwards;
-  
-}
-
-@keyframes example {
-  from {top: 0px;}
-  to {left:50%; background-color: #ddd;}
-}
 img {
   max-width: 100%;
   height: auto;
   border-radius:32px;
-  box-shadow: 10px 10px 5px grey;
+ 
+}
+hr.new {
+  border-top: 2px solid #006ee6;
 }
 
 </style>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-<div class="header">
-<img src="mansi.jpg"  width="260px" height="260px" border="2">
-<pre> <h3>Hey! I am 
-<b>MANSI GAUTAM</b>
-</h3> </pre>
+<body >
 
-
-  
-  <p>Resize the browser window to see the responsive effect.</p>
+<div class="header" style="background-image: url('back5.jpg');">
+   <img src="mansi.jpg"  width="260px" height="260px" border="3">
+   <div><h2><b>MANSI GAUTAM</b></h2>
+   <pre><a title="GMail" href="mailto:mansigautam.bpl@gmail.com" target="_blank" style="color:black; font-size:25px;"> <i class='far fa-envelope'></i></a><t><t><t>  <a title="Github" href="https://www.github.com/mansigautam777" target="_blank" style="color:black; font-size:25px;"><i class='fab fa-github'></i></a><t><t><t>  <a title="Linkedin" href="https://www.linkedin.com/in/mansi-gautam-935009195" target="_blank" style="color:black; font-size:25px;"><i class='fab fa-linkedin'></i></a>
+   </pre>
+   </div>
 </div>
+     
 
-<div class="topnav">
-  <a href="">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+
+<div class="topnav" style="font-family:Times New Roman; opacity:0.8;" >
+   <a  href="#about">ABOUT</a>
+   <a  href="#education">EDUCATION</a>
+   <a  href="#technicalskills">TECHNICAL SKILLS</a>
+   <a  href="#workexperience">WORK EXPERIENCE</a>
+   <a  href="#projects">PROJECTS</a>
+   <a  href="#certificates">CERTIFICATES</a>
+   <a  href="#achievments">ACHIEVMENTS</a>
 </div>
 
 <div class="row">
-  <div class="column">
-    <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+
+  <div class="column" style="font-family:Times New Roman;">
+<a name="about"> </a>
+  <h2>ABOUT</h2> 
+  <hr class="new">
+    <p>I am a Computer Science undergrad at MANIT BHOPAL,
+    who is enthusiastic about coding.
+    I like to observe and explore new things.I take challenges optimististically.
+    I love listening songs and reading books.
+    In my leisure time I like to cook and do creative writing.</p>
   </div>
-  
-  <div class="column">
-    <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+
+  <div class="column" style="font-family:Times New Roman;">
+<a name="education"> </a> 
+  <h2>EDUCATION</h2>
+  <hr class="new">
+    <b>AISSCE(10th)</b><br>
+    <i>St.Mary's Sr. Sec. Convent School,Bhopal (2017)</i><br>
+    <li>10 CGPA<br><br><br>
+    <b>AISSCE(12th)</b><br>
+    <i>St.Mary's Sr. Sec. Convent School,Bhopal (2019)</i><br>
+    <li>94.4%<br><br><br>
+    <b>B.Tech Computer Science and Engineering</b><br>
+    <i>Maulana Azad National Institute of Technology</i><br>
+    <li>8.54 CGPA
   </div>
-  
-  <div class="column">
-    <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+
+  <div class="column" style="font-family:Times New Roman;">
+<a name="technicalskills"> </a>
+  <h2>TECHNICAL SKILLS</h2>
+  <hr class="new">
+    <pre>
+     <i class='fab fa-java' style='font-size:36px'>  JAVA  </i>
+     <i class='fab fa-html5' style='font-size:36px'>  HTML  </i>
+     <i class='fab fa-css3' style='font-size:36px'>  CSS  </i>
+     <i class="fa fa-check-circle-o" style="font-size:36px">  MySQL</i>
+     <i class="fa fa-check-circle-o" style="font-size:36px">  C</i>
+  </div>
+
+  <div class="column" style="font-family:Times New Roman;">
+<a name="workexperience"> </a>
+  <h2>WORK EXPERIENCE</h2>
+  <hr class="new">
+    <b>TECHNICAL  EXECUTIVE</b><br>
+     <i>VISION MANIT,Bhopal</i><br>
+        2020-Present<br>
+  </div>
+
+  <div class="column" style="font-family:Times New Roman;">
+<a name="projects"> </a>
+  <h2>PROJECTS</h2>
+  <hr class="new">
+    <b>Pizza Shop Management Project(2018-19)</b><br>
+    <li>An Object Oriented Programming based project in JAVA.
+    <li>It involved GUI building with MySQL at the back end.
+    <li>The user inputs the details asked which is stored in a data base in    MySQL,which can be retrieved for various purposes.
+    <li>The project involved basics of JAVA and MySQL including linking of GUI frames. 
+  </div>
+
+  <div class="column" style="font-family:Times New Roman; ">
+<a name="certificates"> </a>
+  <h2>CERTIFICATES</h2>
+  <hr class="new">
+    <b>Certificates of Merit</b><br>
+   <li>Public Speaking
+   <li>General Knowledge Quizzes
+   <li>Science Olympiads<br><br>
+   <b>Certificate of Participation</b><br>
+   <li>C Programming Workshop by VISION ,Manit
+   <li>Ethical Hacking Workshop by IEEE ,Manit
+   <li>Artificial Intelligence Workshop by IIEC_DOT
+   <li>Adobe India Session BY AISSEC ,Bhopal
+   <li>TTT Workshop by IBC ,Manit
+  </div>
+
+  <div class="column" style="font-family:Times New Roman; ">
+<a name="achievments"> </a>
+  <h2>ACHIEVMENTS</h2>
+  <hr class="new">
+    <li>Gold Medal in IMO(2018-19)
+    <li>High Distinction in ANCQ(2018)
+    <li>General Proficiency Awards
   </div>
 </div>
-
 </body>
 </html>
