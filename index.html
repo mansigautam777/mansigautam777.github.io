@@ -14,15 +14,13 @@ body {
 }
 
 .header {
-  
-  opacity:0.7;
   padding: 20px;
   text-align: center;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #006ee6;
+  background-color: #000000;
 }
 
 
@@ -37,8 +35,12 @@ body {
 
 
 .topnav a:hover {
-  background-color: #80faff;
-  color: black;
+  background-color: #03e9f4;
+  color:#050801;
+  box-shadow:0 0 5px #03e9f4,
+             0 0 25px #03e9f4,
+             0 0 50px #03e9f4,
+             0 0 200px #03e9f4;
 }
 
 .column {
@@ -68,7 +70,26 @@ img {
 hr.new {
   border-top: 2px solid #006ee6;
 }
+main {
+  padding:25px;
+  text-align:left;
+  background-color:black;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-fill-mode: backwards;
+  animation-direction: reverse;
+}
 
+@keyframes example {
+  0%   { width: 100px;  background-color:black; left:0px; top:0px;}
+  100% { width: 200px;  background-color:black; left:200px; top:0px;}
+}
+h1{
+text-shadow: 0 0 5px #fff,
+             0 0 10px #fff;
+             
+}
 </style>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -77,15 +98,15 @@ hr.new {
 
 <div class="header" style="background-image: url('back5.jpg');">
    <img src="mansi.jpg"  width="260px" height="260px" border="3">
-   <div><h2><b>MANSI GAUTAM</b></h2>
-   <pre><a title="GMail" href="mailto:mansigautam.bpl@gmail.com" target="_blank" style="color:black; font-size:25px;"> <i class='far fa-envelope'></i></a><t><t><t>  <a title="Github" href="https://www.github.com/mansigautam777" target="_blank" style="color:black; font-size:25px;"><i class='fab fa-github'></i></a><t><t><t>  <a title="Linkedin" href="https://www.linkedin.com/in/mansi-gautam-935009195" target="_blank" style="color:black; font-size:25px;"><i class='fab fa-linkedin'></i></a>
+   <div><h1><b>MANSI GAUTAM</b></h1>
+   <pre><a title="GMail" href="mailto:mansigautam.bpl@gmail.com" target="_blank" style="color:black; font-size:25px;"><i class='far fa-envelope'></i></a>  <a title="Github" href="https://www.github.com/mansigautam777" target="_blank" style="color:black; font-size:25px;"><i class='fab fa-github'></i></a>  <a title="Linkedin" href="https://www.linkedin.com/in/mansi-gautam-935009195" target="_blank" style="color:black; font-size:25px;"><i class='fab fa-linkedin'></i></a>
    </pre>
    </div>
 </div>
      
 
 
-<div class="topnav" style="font-family:Times New Roman; opacity:0.8;" >
+<div class="topnav" style="font-family:Times New Roman;" >
    <a  href="#about">ABOUT</a>
    <a  href="#education">EDUCATION</a>
    <a  href="#technicalskills">TECHNICAL SKILLS</a>
@@ -99,7 +120,7 @@ hr.new {
 
   <div class="column" style="font-family:Times New Roman;">
 <a name="about"> </a>
-  <h2>ABOUT</h2> 
+  <main style="color:#d8fbfd; font-size:25px; opacity:0.7;">ABOUT</main>
   <hr class="new">
     <p>I am a Computer Science undergrad at MANIT BHOPAL,
     who is enthusiastic about coding.
@@ -110,7 +131,7 @@ hr.new {
 
   <div class="column" style="font-family:Times New Roman;">
 <a name="education"> </a> 
-  <h2>EDUCATION</h2>
+  <main style="color:#d8fbfd; font-size:25px; opacity:0.7;">EDUCATION</main>
   <hr class="new">
     <b>AISSCE(10th)</b><br>
     <i>St.Mary's Sr. Sec. Convent School,Bhopal (2017)</i><br>
@@ -125,7 +146,7 @@ hr.new {
 
   <div class="column" style="font-family:Times New Roman;">
 <a name="technicalskills"> </a>
-  <h2>TECHNICAL SKILLS</h2>
+  <main style="color:#d8fbfd; font-size:25px; opacity:0.7;">TECHNICAL SKILLS</main>
   <hr class="new">
     <pre>
      <i class='fab fa-java' style='font-size:36px'>  JAVA  </i>
@@ -137,7 +158,7 @@ hr.new {
 
   <div class="column" style="font-family:Times New Roman;">
 <a name="workexperience"> </a>
-  <h2>WORK EXPERIENCE</h2>
+   <main style="color:#d8fbfd; font-size:25px; opacity:0.7;">WORK EXPERIENCE</main>
   <hr class="new">
     <b>TECHNICAL  EXECUTIVE</b><br>
      <i>VISION MANIT,Bhopal</i><br>
@@ -146,7 +167,7 @@ hr.new {
 
   <div class="column" style="font-family:Times New Roman;">
 <a name="projects"> </a>
-  <h2>PROJECTS</h2>
+  <main style="color:#d8fbfd; font-size:25px; opacity:0.7;">PROJECT</main>
   <hr class="new">
     <b>Pizza Shop Management Project(2018-19)</b><br>
     <li>An Object Oriented Programming based project in JAVA.
@@ -157,7 +178,7 @@ hr.new {
 
   <div class="column" style="font-family:Times New Roman; ">
 <a name="certificates"> </a>
-  <h2>CERTIFICATES</h2>
+  <main style="color:#d8fbfd; font-size:25px; opacity:0.7;">CERTIFICATES</main>
   <hr class="new">
     <b>Certificates of Merit</b><br>
    <li>Public Speaking
@@ -173,7 +194,7 @@ hr.new {
 
   <div class="column" style="font-family:Times New Roman; ">
 <a name="achievments"> </a>
-  <h2>ACHIEVMENTS</h2>
+  <main style="color:#d8fbfd; font-size:25px; opacity:0.7;">ACHIEVMENTS</main>
   <hr class="new">
     <li>Gold Medal in IMO(2018-19)
     <li>High Distinction in ANCQ(2018)
